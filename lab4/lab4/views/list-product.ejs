@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>List product</p>
+    <div class="container">
+        <div class="row row-cols-3 g-4">
+            <% for (let item of product) { %>
+                <!-- <p><%=item%></p> -->
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <p><%=item.id %></p>
+                            <h4 style="height:45px;" class="product__title">
+                                <%= item.name %>
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <img style="height: 250px" class="img-fluid img-thumbnail"
+                                src="/images/<%= item.image %>" alt="A Book">
+                            <h5>
+                                <%= item.price %> VNĐ
+                            </h5>
+                            <p class="product__description">
+                                <%=item.description %>
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="/detail/<%=item.id%>"><button class="btn">Chọn</button></a>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+</head>
+<body>
+    <p>chi tiết</p>
+    <p><%=product?.name%></p>
+    <p><%=product?.description%></p>
+    <p><%=product?.image%></p>
+    <a href="/productdetail/<%=product?.id%>">êfrfrf</a>
+    <img src="/images/<%= product?.images %>" alt="">
+    <section class="product">
+        <div class="container">
+            <!-- <div class="row breadcrumb-bgr">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div> -->
+            <div class="row">
+                <div class="col-8">
+                    <div class="product-inner-1">
+                        <div class="title text-center">
+                            <div class="title-1">
+                                <p>Review sách</p>
+                            </div>
+                            <div class="title-2">
+                                <h3><%=product?.name%></h3>
+                            </div>
+                            <div class="title-3">
+                                <p>4 Comments - Viết bởi Bích Ngân - 359 lượt xem</p>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <p>
+                                <span class="product-name">Bạn đắt giá bao nhiêu?</span>
+                                là một cuốn sách theo thể loại tản văn của tác giả <span class="product-acthor">Vãn
+                                    Tình</span> – một cây bút trẻ của làng văn học Trung Quốc hiện nay.
+                            </p>
+                            <p>
+                                Cuốn sách phù hợp với mọi lứa tuổi và nhất là dành riêng cho phái nữ, bởi tác giả nêu ra
+                                nhiều khía cạnh và những điểm chung nhất của phụ nữ Châu Á
+                                trong mọi hoàn cảnh cuộc sống: từ việc sống với mẹ chồng ra sao, hay tới những việc quen
+                                người giàu hay nghèo để cưới và vô số những ví dụ khác của cuộc sống thường nhật…
+                            </p>
+                            <div class="text-center">
+                                <img class="product-img"
+                                    src="https://isachhay.net/wp-content/uploads/2020/08/review-sach-ban-dat-gia-bao-nhieu-2.jpg"
+                                    alt="">
+                            </div>
+                            <h4>Suy ngẫm cá nhân:</h4>
+                            <p>
+                                - Nếu bạn chưa là lập gia đình và còn chật vật kiếm tiền thì cuốn sách sẽ cho bạn những
+                                lời khuyên về cách đối nhân xử thế, cách để người xung quaanh trân trọng mình. Cuộc sống
+                                đôi khi quá nhiều bất công, bạn không nên im lặng mà hãy lên tiếng và thay đổi nó. Nếu
+                                như không dám lên tiếng thì đừng bao giờ đỗ lỗi cho hoàn cảnh, đừng than thân trách phận
+                                hẩm hiu.
+                                “Đỗ lỗi” chính là cái hố sâu tử thần giết cuộc đời bạn đấy.
+                            </p>
+                            <p>
+                                - Nếu bạn chưa là lập gia đình và còn chật vật kiếm tiền thì cuốn sách sẽ cho bạn những
+                                lời khuyên về cách đối nhân xử thế, cách để người xung quaanh trân trọng mình. Cuộc sống
+                                đôi khi quá nhiều bất công, bạn không nên im lặng mà hãy lên tiếng và thay đổi nó. Nếu
+                                như không dám lên tiếng thì đừng bao giờ đỗ lỗi cho hoàn cảnh, đừng than thân trách phận
+                                hẩm hiu.
+                                “Đỗ lỗi” chính là cái hố sâu tử thần giết cuộc đời bạn đấy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product-inner-2">
+                        <div class="title text-center">
+                            <div class="title-1">
+                                <p>Review sách • Sách kỹ năng</p>
+                            </div>
+                        </div>
+                        <div class="product-inner-2-content">
+                            <div class="row">
+                                <div class="col-2 content-img">
+                                    <img src="https://secure.gravatar.com/avatar/cc04ecece09e2d1709d1af5eb455ac7a?s=112&d=mm&r=g" alt="">
+                                </div>
+                                <div class="col-10">
+                                    <p>Bích Ngân</p>
+                                    <p>Tôi là Bích Ngân - cộng tác viên của iSachHay.Net. Tôi là người đam mê du lịch, thích đọc sách và viết lách. 
+                                        Hy vọng những chia sẻ 
+                                        của tôi qua những bài review sẽ giúp ích cho bạn tìm được cuốn sách phù hợp nhất.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-inner-2">
+                        <div class="title text-center">
+                            <div class="title-1">
+                                <p>4 Comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-inner-3">
+                        <form action="/comment/<%=product?.id%>" method="post">
+                            <input type="hidden" name="id_product" value="<%=product?.id%>">
+                            <div class="title text-center">
+                                <div class="title-1">
+                                    <p>Để lại bình luận</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <label for="content">Bình luận</label>
+                                <textarea name="content" id="content" cols="80" rows="10"></textarea>
+                                <div class="rating" data-vote="0">
+                                    <div class="star hidden">
+                                      <span class="full" data-value="0"></span>
+                                      <span class="half" data-value="0"></span>
+                                    </div>
+                                  
+                                    <div class="star">
+                                  
+                                      <span class="full" data-value="1"></span>
+                                      <span class="selected"></span>
+                                  
+                                    </div>
+                                  
+                                    <div class="star">
+                                  
+                                      <span class="full" data-value="2"></span>
+                                      <span class="selected"></span>
+                                  
+                                    </div>
+                                  
+                                    <div class="star">
+                                  
+                                      <span class="full" data-value="3"></span>
+                                      <span class="selected"></span>
+                                  
+                                    </div>
+                                  
+                                    <div class="star">
+                                  
+                                      <span class="full" data-value="4"></span>
+                                      <span class="selected"></span>
+                                  
+                                    </div>
+                                  
+                                    <div class="star">
+                                  
+                                      <span class="full" data-value="5"></span>
+                                      <span class="selected"></span>
+                                  
+                                    </div>
+                                  </div>
+                                <div class="submit-comment">
+                                    <a href="#">
+                                        <button>Đăng bình luận</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-inner-1">
+                        <div class="title text-center">
+                            <div class="title-1">
+                                <p>Review sách • Sách kỹ năng</p>
+                            </div>
+                            <div class="title-2">
+                                <h3>Review sách Bạn Đắt Giá Bao Nhiêu?: Mọi phụ nữ nên đọc</h3>
+                            </div>
+                            <div class="title-3">
+                                <p>4 Comments - Viết bởi Bích Ngân - 359 lượt xem</p>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <p>
+                                <span class="product-name">Bạn đắt giá bao nhiêu?</span>
+                                là một cuốn sách theo thể loại tản văn của tác giả <span class="product-acthor">Vãn
+                                    Tình</span> – một cây bút trẻ của làng văn học Trung Quốc hiện nay.
+                            </p>
+                            <p>
+                                Cuốn sách phù hợp với mọi lứa tuổi và nhất là dành riêng cho phái nữ, bởi tác giả nêu ra
+                                nhiều khía cạnh và những điểm chung nhất của phụ nữ Châu Á
+                                trong mọi hoàn cảnh cuộc sống: từ việc sống với mẹ chồng ra sao, hay tới những việc quen
+                                người giàu hay nghèo để cưới và vô số những ví dụ khác của cuộc sống thường nhật…
+                            </p>
+                            <div class="text-center">
+                                <img class="product-img"
+                                    src="https://isachhay.net/wp-content/uploads/2019/04/Moi-lan-vap-nga-la-mot-lan-truong-thanh-review-sach-2-1-375x195.png"
+                                    alt="">
+                            </div>
+                            <h4>Suy ngẫm cá nhân:</h4>
+                            <p>
+                                - Nếu bạn chưa là lập gia đình và còn chật vật kiếm tiền thì cuốn sách sẽ cho bạn những
+                                lời khuyên về cách đối nhân xử thế, cách để người xung quaanh trân trọng mình. Cuộc sống
+                                đôi khi quá nhiều bất công, bạn không nên im lặng mà hãy lên tiếng và thay đổi nó. Nếu
+                                như không dám lên tiếng thì đừng bao giờ đỗ lỗi cho hoàn cảnh, đừng than thân trách phận
+                                hẩm hiu.
+                                “Đỗ lỗi” chính là cái hố sâu tử thần giết cuộc đời bạn đấy.
+                            </p>
+                            <p>
+                                - Nếu bạn chưa là lập gia đình và còn chật vật kiếm tiền thì cuốn sách sẽ cho bạn những
+                                lời khuyên về cách đối nhân xử thế, cách để người xung quaanh trân trọng mình. Cuộc sống
+                                đôi khi quá nhiều bất công, bạn không nên im lặng mà hãy lên tiếng và thay đổi nó. Nếu
+                                như không dám lên tiếng thì đừng bao giờ đỗ lỗi cho hoàn cảnh, đừng than thân trách phận
+                                hẩm hiu.
+                                “Đỗ lỗi” chính là cái hố sâu tử thần giết cuộc đời bạn đấy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row footer-inner-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 featured">
+                        <div class="row title">
+                            <h4>Featured Posts</h4>
+                        </div>
+                        <div class="row">
+                            <div class="featured-book">
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2017/08/sach-hay-nen-doc-1-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2017/09/tieu-thuyet-hay-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2017/09/sach-hay-ve-kinh-doanh-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 featured">
+                        <div class="row title">
+                            <h4>Featured Posts</h4>
+                        </div>
+                        <div class="row">
+                            <div class="featured-book">
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2021/01/nghi-viec-lam-tu-do-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2020/09/loi-ich-cua-viec-doc-sach-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2020/08/trai-tim-mua-thu-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 featured">
+                        <div class="row title">
+                            <h4>Featured Posts</h4>
+                        </div>
+                        <div class="row">
+                            <div class="featured-book">
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2017/09/tieu-thuyet-hay-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2017/09/tieu-thuyet-hay-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row book">
+                                    <div class="col-5 book-img">
+                                        <img src="https://isachhay.net/wp-content/uploads/2020/09/sach-phat-trien-ban-than-145x100.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-7 book-body">
+                                        <a href="#">
+                                            <p class="title-book">10 lợi ích của việc đọc sách bạn nên biết</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="top-link hide" href="" id="js-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+        <div class="row footer-inner-2">
+            <div class="container">
+                <div class="row col-12">
+                    © 2020. Created by PhuongNhu - iSachHay.Net - Sách là Cuộc Sống
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
